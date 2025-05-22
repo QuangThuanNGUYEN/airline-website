@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #838383;
+    background-color: #fafafa;
+}
+
+/* Typography */
+h1, h3, h4 {
+    margin-bottom: 15px;
+    color: #2b7bb9;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #2b7bb9;
+}
+
+a:hover {
+    color: #1d5f94;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+button {
+    cursor: pointer;
+    background-color: #2b7bb9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d5f94;
+}
+.header {
+    background-color: rgb(0, 51, 102);
+    color: #2b7bb9;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo h1 {
+    color: #f7fbff;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.logo p {
+    color: #6bc6e1;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.main-nav ul li {
+    margin-left: 25px;
+}
+
+.main-nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #2b7bb9;
+}
+
+.login-btn {
+    background-color: rgb(102, 204, 255);
+    border-bottom-left-radius: 4px;
+    color: rgb(0, 51, 102) !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.login-btn:hover {
+    background-color: rgb(173, 228, 255);
+}
+.small-name{
+    color: white;
+}
+.sky{
+    color: white;
+}
+.service-title{
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(0, 51, 102);
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 22px;
+}
+.hr1{
+    width: 1100px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 340px;
+    width: 300px;
+    justify-content: start;
+    margin-left: 24px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    transition: width 0.25s;
+    transition: height 0.25s, width 0.25s, padding-left 0.25s,padding-top 0.25s
+}
+.box1:hover{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 350px;
+    height: 350px;
+    font-size: 26px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+
+
+
+
+}
+.first{
+    color: rgb(0, 51, 102);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.first-text{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    height: 90px;
+    margin-right: 20px;
+    font-size: 14px;
+    
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+img{
+    width: 40px;
+    border-radius: 40px;
+}
+.footer-service{
+
+
+    background-color: rgb(0, 51, 102);
+    height: 150px;
+}
+.name{
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+span{
+    font-size: 14px;
+    color: rgb(102, 204, 255);
+    font-weight: 100;
+
+}
+.socials{
+    display: flex;
+    justify-content:center;
+
+}
+.flw{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    width: 120px;
+    
+
+
+}
+.copy{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    
+}
+.hr2{
+    margin: auto;
+    width: 1100px;
+    height: 1px;
+    border: none;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.233);
+}
+
+    
+
+
+
+
