@@ -165,8 +165,8 @@ input[type="checkbox"] {
     padding: 0 20px;
 }
 
-/* Login Form Container */
-.login-form-container {
+/* Login Tabs */
+.login-tabs {
     flex: 1;
     background-color: white;
     border-radius: 8px;
@@ -188,8 +188,9 @@ input[type="checkbox"] {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
-    display: block;
     color: #505050;
+    display: block;
+    text-decoration: none;
 }
 
 .tab-item.active {
@@ -203,8 +204,16 @@ input[type="checkbox"] {
     text-decoration: none;
 }
 
-.form-content {
+.tab-content {
     padding: 30px;
+}
+
+.login-form, .signup-form {
+    display: none;
+}
+
+.login-form.active, .signup-form.active {
+    display: block;
 }
 
 .form-group {
@@ -227,6 +236,16 @@ input[type="checkbox"] {
 .remember-me {
     display: flex;
     align-items: center;
+}
+
+.form-terms {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form-terms label {
+    margin-top: -2px;
 }
 
 .signup-link {
@@ -359,214 +378,9 @@ input[type="checkbox"] {
     color: #e6f4f9;
 }
 
-.newsletter-form input {
-    border-radius: 4px 0 0 4px;
-    margin-bottom: 0;
-}
-
-.newsletter-form button {
-    border-radius: 0 4px 4px 0;
-    background-color: #ff6b6b;
-    width: auto;
-}
-
-.newsletter-form button:hover {
-    background-color: #ff5252;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s;
-}
-
-.social-icon:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #e6f4f9;
-}
-
 /* Responsive Design */
 @media (max-width: 1000px) {
     .login-container {
         flex-direction: column;
-    }
-    
-    .login-form-container {
-        margin-right: 0;
-        margin-bottom: 30px;
-        max-width: 100%;
-    }
-    
-    .login-benefits {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .main-nav {
-        margin-top: 15px;
-    }
-    
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .main-nav ul li {
-        margin: 5px 10px;
-    }
-    
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .remember-me {
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .form-content {
-        padding: 20px;
-    }
-
-    .hero {
-        height: 200px;
-        display: flex;
-    }
-
-    .login-container {
-        margin-top: -30px;
-    }
-}
-
-
-.newsletter-form input {
-    border-radius: 4px 0 0 4px;
-    margin-bottom: 0;
-}
-
-.newsletter-form button {
-    border-radius: 0 4px 4px 0;
-    background-color: #ff6b6b;
-    width: auto;
-}
-
-.newsletter-form button:hover {
-    background-color: #ff5252;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s;
-}
-
-.social-icon:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #e6f4f9;
-}
-
-/* Responsive Design */
-@media (max-width: 1000px) {
-    .login-container {
-        flex-direction: column;
-    }
-    
-    .login-tabs {
-        margin-right: 0;
-        margin-bottom: 30px;
-        max-width: 100%;
-    }
-    
-    .login-benefits {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .main-nav {
-        margin-top: 15px;
-    }
-    
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .main-nav ul li {
-        margin: 5px 10px;
-    }
-    
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .remember-me {
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .tab-content {
-        padding: 20px;
-    }
-    
-    .hero {
-        height: 200px;
-    }
-    
-    .login-container {
-        margin-top: -30px;
     }
 }

@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWays Airlines - Book Your Flight</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>SkyWays</h1>
+            <p>Airlines</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#destinations">Destinations</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="booking-hero">
+        <div class="hero-content">
+            <h1>Book Your Flight</h1>
+            <p>Find and book the perfect flight for your journey</p>
+        </div>
+    </div>
+    
+    <div class="booking-search-container">
+        <div class="search-form">
+            <h3>Search Flights</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" name="from" placeholder="Departure City">
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" name="to" placeholder="Destination City">
+                </div>
+                <div class="form-group">
+                    <label for="depart">Departure:</label>
+                    <input type="date" id="depart" name="depart">
+                </div>
+                <div class="form-group">
+                    <label for="return">Return:</label>
+                    <input type="date" id="return" name="return">
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class">
+                        <option value="economy">Economy</option>
+                        <option value="economy-plus">Economy Plus</option>
+                        <option value="business">Business</option>
+                        <option value="first">First Class</option>
+                    </select>
+                </div>
+                <div class="form-group search-btn">
+                    <button type="submit">Search Flights</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-results">
+        <div class="container">
+            <h1>Available Flights</h1>
+            <hr>
+            
+            <div class="filters">
+                <h3>Filter Results</h3>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <div class="price-range">
+                            Minimum Price
+                            <input type="range" id="price-min" min="200" max="2000" value="200">
+                            Maximum Price 
+                            <input type="range" id="price-max" min="200" max="2000" value="2000">
+                            <div class="price-labels">
+                                <span>$200</span>
+                                <span>$2000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Departure Time</label>
+                        <div class="time-filters">
+                            <div>
+                                <input type="checkbox" id="morning" name="time">
+                                <label for="morning">Morning (6AM - 12PM)</label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="afternoon" name="time">
+                                <label for="afternoon">Afternoon (12PM - 6PM)</label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="evening" name="time">
+                                <label for="evening">Evening (6PM - 12AM)</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Airlines</label>
+                        <div class="airline-filters">
+                            <div>
+                                <input type="checkbox" id="skyways" name="airline" checked>
+                                <label for="skyways">SkyWays Airlines</label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="partner1" name="airline">
+                                <label for="partner1">Partner Airlines</label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="partner2" name="airline">
+                                <label for="partner2">Global Airways</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flight-results">
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="airline-logo">
+                            <h4>SkyWays</h4>
+                        </div>
+                        <div class="flight-details">
+                            <div class="departure">
+                                <h4>08:30</h4>
+                                <p>New York (JFK)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <div class="duration-line"></div>
+                                <p>7h 45m</p>
+                                <p>Direct</p>
+                            </div>
+                            <div class="arrival">
+                                <h4>16:15</h4>
+                                <p>London (LHR)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-info">
+                            <h3>$649</h3>
+                            <p>per person</p>
+                            <p class="class-type">Economy</p>
+                        </div>
+                        <button class="select-flight">Select Flight</button>
+                    </div>
+                </div>
+                
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="airline-logo">
+                            <h4>SkyWays</h4>
+                        </div>
+                        <div class="flight-details">
+                            <div class="departure">
+                                <h4>14:20</h4>
+                                <p>New York (JFK)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <div class="duration-line"></div>
+                                <p>8h 15m</p>
+                                <p>1 Stop</p>
+                            </div>
+                            <div class="arrival">
+                                <h4>22:35</h4>
+                                <p>London (LHR)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-info">
+                            <h3>$549</h3>
+                            <p>per person</p>
+                            <p class="class-type">Economy</p>
+                        </div>
+                        <button class="select-flight">Select Flight</button>
+                    </div>
+                </div>
+                
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="airline-logo">
+                            <h4>SkyWays</h4>
+                        </div>
+                        <div class="flight-details">
+                            <div class="departure">
+                                <h4>18:45</h4>
+                                <p>New York (JFK)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <div class="duration-line"></div>
+                                <p>7h 30m</p>
+                                <p>Direct</p>
+                            </div>
+                            <div class="arrival">
+                                <h4>02:15</h4>
+                                <p>London (LHR)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-info">
+                            <h3>$799</h3>
+                            <p>per person</p>
+                            <p class="class-type">Business</p>
+                        </div>
+                        <button class="select-flight">Select Flight</button>
+                    </div>
+                </div>
+                
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="airline-logo">
+                            <h4>Partner</h4>
+                        </div>
+                        <div class="flight-details">
+                            <div class="departure">
+                                <h4>22:10</h4>
+                                <p>New York (JFK)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <div class="duration-line"></div>
+                                <p>9h 25m</p>
+                                <p>1 Stop</p>
+                            </div>
+                            <div class="arrival">
+                                <h4>07:35</h4>
+                                <p>London (LHR)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-info">
+                            <h3>$489</h3>
+                            <p>per person</p>
+                            <p class="class-type">Economy</p>
+                        </div>
+                        <button class="select-flight">Select Flight</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-tips">
+        <div class="container">
+            <h1>Booking Tips</h1>
+            <hr>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>Best Time to Book</h4>
+                    <p>Book your flight 2-8 weeks in advance for domestic flights and 6-10 weeks for international flights to get the best prices.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Flexible Dates</h4>
+                    <p>Be flexible with your travel dates. Flying on weekdays or during off-peak seasons can save you significant money.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Compare Classes</h4>
+                    <p>Sometimes upgrading to premium economy or business class costs only slightly more and offers much better value.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Check Baggage Policies</h4>
+                    <p>Review baggage allowances and fees before booking. Some lower-priced tickets may have stricter baggage policies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#destinations">Destinations</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkyWays Airlines. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

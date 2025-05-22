@@ -57,6 +57,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button:hover {
@@ -65,7 +66,7 @@ button:hover {
 
 input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     margin-bottom: 15px;
@@ -159,21 +160,13 @@ input[type="checkbox"] {
     max-width: 1200px;
     margin: -50px auto 60px;
     display: flex;
-    gap: 30px;
     position: relative;
     z-index: 10;
     padding: 0 20px;
 }
 
-/* Signup Form */
+/* Signup Tabs */
 .signup-form-container {
-    /* flex: 1;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* padding: 30px; */
-    /* max-width: 650px;  */
-
     flex: 1;
     background-color: white;
     border-radius: 8px;
@@ -183,19 +176,10 @@ input[type="checkbox"] {
     max-width: 600px;
 }
 
-.signup-form-container h1 {
-    margin-bottom: 10px;
-}
-
-.form-content {
-    padding: 30px;
-}
-
 .tab-header {
     display: flex;
     background-color: #f5f5f5;
 }
-
 
 .tab-item {
     flex: 1;
@@ -206,6 +190,7 @@ input[type="checkbox"] {
     transition: all 0.3s;
     display: block;
     color: #505050;
+    text-decoration: none;
 }
 
 .tab-item.active {
@@ -219,12 +204,18 @@ input[type="checkbox"] {
     text-decoration: none;
 }
 
-.signup-form {
-    margin-top: 25px;
+.form-content {
+    padding: 30px;
 }
 
 .form-group {
     margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .form-row {
@@ -234,12 +225,6 @@ input[type="checkbox"] {
 
 .form-row .form-group {
     flex: 1;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
 }
 
 .checkbox-group {
@@ -257,11 +242,10 @@ input[type="checkbox"] {
 }
 
 .signup-btn {
-    width: 100%;
+    background-color: #ff6b6b;
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #ff6b6b;
 }
 
 .signup-btn:hover {
@@ -280,7 +264,7 @@ input[type="checkbox"] {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .benefits-header {
@@ -426,7 +410,12 @@ input[type="checkbox"] {
         flex-direction: column;
     }
     
-    .signup-form-container,
+    .signup-form-container {
+        margin-right: 0;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    
     .benefits-container {
         max-width: 100%;
     }
@@ -458,15 +447,15 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 480px) {
+    .form-content {
+        padding: 20px;
+    }
+    
     .hero {
         height: 200px;
     }
     
     .signup-container {
         margin-top: -30px;
-    }
-    
-    .signup-form-container {
-        padding: 20px;
     }
 }
