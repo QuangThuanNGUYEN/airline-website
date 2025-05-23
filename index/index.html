@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airline Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #00274d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('hero.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Airline</h1>
+    <div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destination.html">Destinations</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Login</a>
+      <a href="faq.html">FAQ/Contact</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h2>Welcome to World Class</h2>
+    <p>The warmth of a family dinner with a family you've just met — we know the feeling.</p>
+  </div>
+
+  <div class="sections">
+    <div class="card">
+      <h3>About Us</h3>
+      <p>Learn about our mission, history, and people.</p>
+      <a href="about.html">Read more →</a>
+    </div>
+    <div class="card">
+      <h3>Our Services</h3>
+      <p>Check out our premium in-flight and ground services.</p>
+      <a href="services.html">Explore services →</a>
+    </div>
+    <div class="card">
+      <h3>Destinations</h3>
+      <p>Discover our top destinations across the globe.</p>
+      <a href="destination.html">See destinations →</a>
+    </div>
+    <div class="card">
+      <h3>Flight Booking</h3>
+      <p>Book flights quickly and easily online.</p>
+      <a href="booking.html">Book now →</a>
+    </div>
+    <div class="card">
+      <h3>Login / Sign Up</h3>
+      <p>Manage your account and preferences.</p>
+      <a href="login.html">Access account →</a>
+    </div>
+    <div class="card">
+      <h3>FAQ & Contact</h3>
+      <p>Have questions? We’re here to help you 24/7.</p>
+      <a href="faq.html">Get help →</a>
+    </div>
+  </div>
+</body>
+</html>
