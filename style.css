@@ -1,3 +1,10 @@
+/* Reset and Base Styles for header consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
@@ -5,20 +12,11 @@ body {
     margin: 0;
     padding: 0;
     color: #222;
+    line-height: 1.6;
+    background-color: #fafafa;
   }
   
-  header, footer {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0077cc;
-    font-weight: bold;
-  }
+  /* Removed old header styles to avoid conflicts with new .header class */
   
   main {
     background-color: rgba(255, 255, 255, 0.9);
@@ -29,6 +27,37 @@ body {
     box-shadow: 0 0 10px #aaa;
   }
   
+/* Typography - matching styles.css exactly */
+h1, h3, h4 {
+    margin-bottom: 15px;
+    color: #2b7bb9;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #2b7bb9;
+}
+
+a:hover {
+    color: #1d5f94;
+}
+
   h2 {
     border-bottom: 2px solid #0077cc;
     padding-bottom: 5px;
@@ -76,3 +105,264 @@ body {
     background-color: #005fa3;
   }
  
+  /* Removed old footer styles to avoid conflicts with new .footer class */
+
+  /* Header and Navigation - matching index.html styles */
+  .header {
+    background-color: white;
+    color: #2b7bb9;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo h1 {
+    color: #2b7bb9;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.logo p {
+    color: #6bc6e1;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin-left: 25px;
+}
+
+.main-nav ul li a {
+    color: #505050;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    color: #2b7bb9;
+}
+
+.login-btn {
+    background-color: #e6f4f9;
+    color: #2b7bb9 !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.login-btn:hover {
+    background-color: #d0ebf5;
+}
+
+/* Footer styles to match index.html */
+
+.footer-compact {
+    background: linear-gradient(135deg, #2b7bb9 0%, #1d5f94 100%);
+    color: white;
+    padding: 30px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-brand h3 {
+    color: white;
+    margin: 0 0 5px 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footer-brand span {
+    font-size: 16px;
+    color: #6bc6e1;
+    font-weight: 300;
+}
+
+.tagline {
+    color: #e6f4f9;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    font-style: italic;
+}
+
+.footer-links-compact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-links-compact a {
+    color: #e6f4f9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-links-compact a:hover {
+    color: white;
+    border-bottom-color: #6bc6e1;
+    transform: translateY(-1px);
+}
+
+.footer-newsletter-compact h4,
+.footer-social-compact h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+/* Improved Newsletter Form */
+.newsletter-form-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form-compact input {
+    padding: 12px 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.newsletter-form-compact input::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.newsletter-form-compact input:focus {
+    border-color: #6bc6e1;
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(107, 198, 225, 0.3);
+}
+
+.newsletter-form-compact button {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ff6b6b, #ff5252);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.newsletter-form-compact button:hover {
+    background: linear-gradient(45deg, #ff5252, #ff4444);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.social-icons-row {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon-compact {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6f4f9;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-icon-compact:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #6bc6e1;
+    color: white;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom-compact {
+    max-width: 1200px;
+    margin: 25px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+.footer-bottom-compact p {
+    margin: 0;
+    font-size: 14px;
+    color: #e6f4f9;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .footer-links-compact {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .social-icons-row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-compact {
+        padding: 25px 15px 15px;
+    }
+    
+    .footer-top {
+        gap: 20px;
+    }
+}
