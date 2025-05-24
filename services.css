@@ -244,6 +244,24 @@ span{
     border: none;
     box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.233);
 }
+.last_imageee{
+    display: flex;
+    flex: 1;
+    border-radius: 0px;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    margin: 0px;
+    height: 500px;
+    box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.3);
+
+}
+.lastimg{
+    margin: 0px;
+    display: flex;
+    flex: 1;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 1);
+}
     
 
 
