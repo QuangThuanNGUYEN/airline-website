@@ -219,7 +219,7 @@ button:hover {
     background: linear-gradient(135deg, #2b7bb9 0%, #1d5f94 100%);
     color: white;
     padding: 30px 20px 20px;
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .footer-top {
