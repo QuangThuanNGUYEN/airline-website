@@ -154,7 +154,8 @@ button:hover {
     margin-left: 24px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
     transition: width 0.25s;
-    transition: height 0.25s, width 0.25s, padding-left 0.25s,padding-top 0.25s
+    transition: height 0.25s, width 0.25s, padding-left 0.25s,padding-top 0.25s;
+    border-radius: 4px;
 }
 .box1:hover{
     display: flex;
